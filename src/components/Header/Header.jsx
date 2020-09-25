@@ -17,6 +17,7 @@ const NavList = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding-inline-start: unset;
   
   .nav-links {
     color: antiquewhite;
