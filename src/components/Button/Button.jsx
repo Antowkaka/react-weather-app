@@ -10,6 +10,7 @@ export const Button = styled.button`
   border: none;
   padding: 10px;
   height: 50px;
+  width: 300px;
   
   &:hover {
     background-color: ${props => props.hover.bgcolor || "#777"};

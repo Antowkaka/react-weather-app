@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import FilmLogo from "../../images/film.svg";
 
 const StyledHeader = styled.header`
   height: 100px;
@@ -25,18 +26,20 @@ const NavList = styled.ul`
     list-style: none;
     text-decoration: none;
   }
+  
+  .logo {
+    width: 100px;
+  }
 `
 
-export const Header = () => {
-    return (
-        <StyledHeader>
-            <HeaderNav>
-                <NavList>
-                    <NavLink className="nav-links" to="/">Home</NavLink>
-                    <NavLink className="nav-links" to="#">Logo</NavLink>
-                    <NavLink className="nav-links" to="#">About us</NavLink>
-                </NavList>
-            </HeaderNav>
-        </StyledHeader>
-    )
-}
+export const Header = () => (
+    <StyledHeader>
+        <HeaderNav>
+            <NavList>
+                <NavLink className="nav-links" to="/">Home</NavLink>
+                <img className="logo" src={FilmLogo} alt="Film Logo"/>
+                <NavLink className="nav-links" to="#">About us</NavLink>
+            </NavList>
+        </HeaderNav>
+    </StyledHeader>
+);

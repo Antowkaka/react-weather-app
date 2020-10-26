@@ -10,12 +10,10 @@ const StyledMenu = styled.div`
   align-items: center;
 `
 
-export const SelectMenu = () => {
-    return (
-        <StyledMenu>
-            <Button uppercase bold hover={{bgcolor: "green", textColor: "yellow"}}>Today</Button>
-            <Button uppercase bold hover={{bgcolor: "yellow", textColor: "purple"}}>Week</Button>
-            <Button uppercase bold hover={{bgcolor: "black", textColor: "pink"}}>2 Weeks</Button>
-        </StyledMenu>
-    )
-}
+export const SelectMenu = () => (
+    <StyledMenu>
+        <Button uppercase bold hover={{bgcolor: "yellow", textColor: "black"}}>Today</Button>
+        <Button uppercase bold hover={{bgcolor: "yellow", textColor: "purple"}}>Week</Button>
+        <Button uppercase bold hover={{bgcolor: "black", textColor: "pink"}}>2 Weeks</Button>
+    </StyledMenu>
+);
