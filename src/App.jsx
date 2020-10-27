@@ -11,12 +11,16 @@ import {
     BrowserRouter as Router
 } from "react-router-dom";
 import { SelectMenu } from "./components/SelectMenu/SelectMenu";
+import {BodySkeleton} from "./components/BodyContainer/BodyContainer";
+import {getMovies} from "./api/getMovies";
+import {getDailyTranding} from "./api/getDailyTranding";
+import {Home} from "./pages/Home/Home";
 
 function App() {
   return (
     <Router className="App">
         <Header/>
-        <FilmCard/>
+        <Home/>
     </Router>
   );
 }

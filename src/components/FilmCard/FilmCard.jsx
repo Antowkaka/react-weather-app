@@ -10,8 +10,14 @@ const StyledCard = styled.div`
 
 
 
-export const FilmCard = () => (
-    <StyledCard>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur earum enim expedita illum optio quae rem sit suscipit tenetur?</p>
-    </StyledCard>
-)
+export const FilmCard = (props) => {
+    const { filmName, filmDate } = props;
+
+
+    return (
+        <StyledCard>
+            <h2>{filmName}</h2>
+            <p>{filmDate}</p>
+        </StyledCard>
+    )
+}

@@ -2,16 +2,18 @@ import React from "react";
 import styled from "styled-components";
 
 
-const BodySkelet = styled.div`
+export const BodySkeleton = styled.div`
+  display: flex;
   margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 10px;
   
   @media (min-width: 1200px) {
-    padding: 0 30px;
+    padding: 50px 30px 0;
   }
   
   @media (max-width: 1200px) {
     max-width: 1140px;
-    
   }
   
   @media (max-width: 992px) {
